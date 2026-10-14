@@ -74,11 +74,19 @@ Training configuration:
 ```
 brain-tumor-segmentation/
 ├── MAU_Net_Brain_Tumor_Segmentation.ipynb  # Main notebook: model, training, evaluation
+├── src/
+│   ├── model.py                            # MDConv, AGCB, CPM blocks + SimpleMAUNet
+│   ├── dataset.py                          # BraTS 2020 dataset loader
+│   ├── losses.py                           # Combined Dice + CE loss, Dice metric
+│   ├── train.py                            # Training script (run: python src/train.py)
+│   └── visualize.py                        # Prediction overlays, architecture figures
 ├── model.md                                # Layer-by-layer architecture reference
 ├── requirements.txt                        # Python dependencies
 ├── assets/                                 # Figures (architecture, predictions, curves)
 └── data/                                   # BraTS 2020 goes here (not included, see below)
 ```
+
+The `src/` modules are extracted verbatim from the notebook — same code, organized for reading and reuse.
 
 ## Dataset
 
