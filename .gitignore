@@ -1,0 +1,30 @@
+# Dataset (download separately, see data/README.md)
+data/BraTS2020_TrainingData/
+data/BraTS2020_ValidationData/
+*.nii
+*.nii.gz
+BraTs*2020.zip
+BraTs_2020.zip.part.*
+
+# Checkpoints & logs
+*.pth
+*.pt
+*.ckpt
+runs/
+lightning_logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+mau_net_env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
